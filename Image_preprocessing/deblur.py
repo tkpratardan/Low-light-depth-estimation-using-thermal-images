@@ -22,11 +22,3 @@ def deblur_image(image, l, r0, lambda_):
 	deblurred_image = wiener_deconvolution(image, kernel)
 
 	return deblurred_image
-
-# Example usage:
-image = np.array(...)  # Input image
-l = 0.1  # Optic focal length
-r0 = 0.01  # Fried parameter
-lambda_ = 0.5  # Optical wavelength
-
-deblurred_image = deblur_image(image, l, r0, lambda_)
